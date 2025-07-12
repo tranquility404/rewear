@@ -52,7 +52,7 @@ ReWear offers a modern, responsive, and animated interface with:
 | Frontend     | React + Vite + TailwindCSS       |
 | UI Animation | Framer Motion                    |
 | Backend      | Spring Boot + Java               |
-| DB           | PostgreSQL                       |
+| DB           | MongoDB                          |
 | Auth         | Spring Security + JWT            |
 | Storage      | Cloudinary (image hosting)       |
 | Build Tool   | Maven                            |
