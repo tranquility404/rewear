@@ -82,9 +82,9 @@ Make sure to configure `application.properties` with your DB credentials and Clo
 
 ## 🙌 Team ReWear
 
-* **Frontend:** \[Your Name] – UI/UX, React, Tailwind, Animation
-* **Backend:** \[Teammate Name] – Spring Boot, APIs, Security
-* **Database & Integration:** \[Teammate Name] – PostgreSQL, DevOps
+* **Frontend:** \Honey Priya – UI/UX, React, Tailwind, Animation
+* **Backend:** \Aman Verma – Spring Boot, APIs, Security
+* **Database & Integration:** \Kashif Ali Khan – PostgreSQL, DevOps
 
 ---
 
