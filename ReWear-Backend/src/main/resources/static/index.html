@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapPlatform - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .hero {
+            background: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #dee2e6;
+        }
+        
+        .featured-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .item-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .item-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .item-image {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+        
+        .item-content {
+            padding: 1.5rem;
+        }
+        
+        .item-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .item-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .item-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 2rem;
+            color: #e74c3c;
+            background: #fdf2f2;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">SwapPlatform</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="browse.html">Browse</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 id="platform-title">Welcome to SwapPlatform</h1>
+                <p id="platform-description">Loading...</p>
+                <div class="cta-buttons" id="cta-buttons">
+                    <!-- CTA buttons will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Items</h2>
+                <div id="featured-items" class="loading">
+                    Loading featured items...
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SwapPlatform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8080/api';
+
+        // Load landing page data
+        async function loadLandingData() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/public/landing`);
+                if (!response.ok) {
+                    throw new Error('Failed to load landing data');
+                }
+                
+                const data = await response.json();
+                
+                // Update page content
+                document.getElementById('platform-title').textContent = data.intro;
+                document.getElementById('platform-description').textContent = data.description;
+                
+                // Create CTA buttons
+                const ctaContainer = document.getElementById('cta-buttons');
+                ctaContainer.innerHTML = '';
+                
+                data.callsToAction.forEach((cta, index) => {
+                    const button = document.createElement('a');
+                    button.href = '#';
+                    button.className = index === 0 ? 'btn btn-primary' : 'btn btn-secondary';
+                    button.textContent = cta;
+                    
+                    // Add click handlers
+                    if (cta === 'Browse Items') {
+                        button.href = 'browse.html';
+                    } else if (cta === 'List an Item') {
+                        button.href = 'upload.html';
+                    } else if (cta === 'Start Swapping') {
+                        button.href = 'signup.html';
+                    }
+                    
+                    ctaContainer.appendChild(button);
+                });
+                
+                // Display featured items
+                displayFeaturedItems(data.featuredItems);
+                
+            } catch (error) {
+                console.error('Error loading landing data:', error);
+                document.getElementById('featured-items').innerHTML = 
+                    '<div class="error">Failed to load content. Please try again later.</div>';
+            }
+        }
+
+        function displayFeaturedItems(items) {
+            const container = document.getElementById('featured-items');
+            
+            if (!items || items.length === 0) {
+                container.innerHTML = '<p class="loading">No featured items available.</p>';
+                return;
+            }
+            
+            container.innerHTML = '';
+            const grid = document.createElement('div');
+            grid.className = 'items-grid';
+            
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'item-card';
+                card.onclick = () => window.location.href = `item.html?id=${item.id}`;
+                
+                card.innerHTML = `
+                    <div class="item-image">
+                        ${item.images && item.images.length > 0 
+                            ? `<img src="${API_BASE_URL}${item.images[0]}" alt="${item.title}" style="width:100%;height:100%;object-fit:cover;">`
+                            : 'No Image'
+                        }
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">${item.title}</h3>
+                        <p class="item-description">${item.description.substring(0, 100)}${item.description.length > 100 ? '...' : ''}</p>
+                        <div class="item-meta">
+                            <span>By ${item.uploader ? item.uploader.name : 'Unknown'}</span>
+                            <span>${item.status}</span>
+                        </div>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+            
+            container.appendChild(grid);
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadLandingData);
+    </script>
+</body>
+</html>
