@@ -1,0 +1,22 @@
+{
+  "name": "ReWear - Community Clothing Exchange",
+  "short_name": "ReWear",
+  "description": "Sustainable clothing exchange platform for conscious fashion enthusiasts",
+  "theme_color": "#059669",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "shopping", "social"],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait"
+}
